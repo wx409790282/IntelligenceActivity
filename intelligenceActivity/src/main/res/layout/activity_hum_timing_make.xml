@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.intelligence.activity.humidifier.HumTimingMakeActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <com.intelligence.activity.humidifier.NavigationBar
+            android:id="@+id/navigationbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="30dp" >
+
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/hour"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content" />
+
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/min"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content" />
+            
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/coc"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:divider="#00000000" />
+    </LinearLayout>
+
+</RelativeLayout>

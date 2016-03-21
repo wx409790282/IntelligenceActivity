@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:gravity="center"
+    android:layout_margin="8dp" >
+
+    <TextView
+        android:id="@+id/itemtitle"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        
+        android:textColor="@color/black"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/itemcon"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:gravity="right|center_vertical"
+        android:textColor="@color/dimgray"
+        android:textSize="22dp" />
+
+    <com.intelligence.activity.humidifier.SwitchButton
+        android:id="@+id/wiperSwitch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lightgray" />
+
+</RelativeLayout>

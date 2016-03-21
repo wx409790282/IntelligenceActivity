@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="150dp" >
+
+    
+    <ImageView 
+        android:id="@+id/ivRootSelect"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/home_btn"
+        android:layout_marginTop="50dp"
+        />
+    
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/slview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            
+        </LinearLayout>
+    </ScrollView>
+
+    
+
+</RelativeLayout>

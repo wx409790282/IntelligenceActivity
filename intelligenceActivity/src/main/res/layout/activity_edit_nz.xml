@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:su="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/tablayout"
+        layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tablayout"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp" >
+
+            <TimePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/timepicker"></TimePicker>
+            <com.intelligence.activity.view.ScrollerNumberPicker
+                android:id="@+id/couny"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="26dp"
+                android:layout_weight="1"
+                su:itemNumber="3"
+                su:lineColor="#ffff6000"
+                su:maskHight="32dp"
+                su:noEmpty="true"
+                su:normalTextColor="#777"
+                su:normalTextSize="14sp"
+                su:selecredTextColor="#ff000000"
+                su:selecredTextSize="22sp"
+                su:unitHight="50dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/order_time_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/more_my_kuang_bg"
+            android:gravity="center_vertical"
+            android:hint="@string/alarm_set_hint"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/nz_moshi_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/more_my_kuang_bg"
+            android:gravity="center_vertical"
+            android:hint="@string/alarm_set_mode_hint"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:id="@+id/nz_time_layout_id"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <TextView
+                android:id="@+id/layout_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/weekly_repeat"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/nz_time_txt_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:drawablePadding="10.0dip"
+                android:drawableRight="@drawable/icon_next"
+                android:gravity="center_vertical"
+                android:text="@string/never"
+                android:textColor="@color/gray"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:id="@+id/nz_edit_layout_id"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <TextView
+                android:id="@+id/layout_011"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/label"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/nz_eidt_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:drawablePadding="10.0dip"
+                android:drawableRight="@drawable/icon_next"
+                android:gravity="center_vertical"
+                android:text="@string/boil"
+                android:textColor="@color/gray"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:id="@+id/zdy_edit_layout_id"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <TextView
+                android:id="@+id/layout_012"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/start_notificate"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <CheckBox
+                android:id="@+id/Switch01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:button="@drawable/t1_selected"
+                android:padding="5dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:id="@+id/zdy_edit_layout_id1"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <TextView
+                android:id="@+id/layout_013"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/stop_notificate"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <CheckBox
+                android:id="@+id/Switch02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:button="@drawable/t1_selected"
+                android:padding="5dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:id="@+id/lever_id"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <TextView
+                android:id="@+id/layout_014"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/short_of_water_remaind"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/lever_txt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/Switch03"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="20dp"
+                android:text="水位 ＜0.5L"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <CheckBox
+                android:id="@+id/Switch03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:button="@drawable/t1_selected"
+                android:padding="5dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line" />
+    </LinearLayout>
+
+</RelativeLayout>

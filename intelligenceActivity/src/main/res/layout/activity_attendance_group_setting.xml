@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.intelligence.activity.attendance.AttendanceGroupSetting"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/tablayout"
+        layout="@layout/title" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/group_name"
+                style="@style/TextTitleStyle"/>
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/attendance_group_name"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/group_id"
+                style="@style/TextTitleStyle"/>
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/attendance_group_id"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/attendance_setting_default"
+        android:layout_marginTop="32dp"
+        style="@style/TextTitleStyle"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="64dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/from"
+                android:textSize="24sp"/>
+            <com.gc.materialdesign.views.ButtonFlat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/attendance_group_starttime"
+                android:text="09:00"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="24sp"
+                android:text="@string/to"/>
+            <com.gc.materialdesign.views.ButtonFlat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/attendance_group_endtime"
+                android:text="18:00"/>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

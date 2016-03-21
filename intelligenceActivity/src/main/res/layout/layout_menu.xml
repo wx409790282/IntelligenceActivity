@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dip"
+    android:layout_height="fill_parent"
+    android:background="@drawable/tab_bg"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:layout_width="240dip"
+        android:layout_height="50.0dip"
+        android:clickable="true"
+        android:drawableLeft="@drawable/menu_icon1"
+        android:drawablePadding="10.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:textColor="@color/white"
+        android:text="@string/my_device"
+        android:textStyle="bold"
+        android:id="@+id/layout_01"
+        android:textSize="20dp" />
+
+    <!-- <View
+        android:layout_width="240dip"
+        android:layout_height="2.0dip"
+        android:background="@drawable/line"
+         /> -->
+
+    <TextView
+         android:id="@+id/layout_02"
+        android:layout_width="240dip"
+        android:layout_height="50.0dip"
+        android:clickable="true"
+        android:drawableLeft="@drawable/menu_icon2"
+        android:drawablePadding="10.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="@string/setting"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+   <!--  <View
+        android:layout_width="240dip"
+        android:layout_height="2.0dip"
+        android:background="@drawable/line" /> -->
+
+    <!-- <TextView
+        android:layout_width="240dip"
+        android:layout_height="50.0dip"
+        android:clickable="true"
+        android:drawableLeft="@drawable/menu_icon3"
+        android:drawablePadding="10.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="用户分享"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp" 
+        android:id="@+id/user_share_id"
+        /> -->
+
+   <!--  <View
+        android:layout_width="240dip"
+        android:layout_height="2.0dip"
+        android:background="@drawable/line" /> -->
+    <TextView
+         android:id="@+id/layout_04"
+        android:layout_width="240dip"
+        android:layout_height="50.0dip"
+        android:clickable="true"
+        android:drawableLeft="@drawable/menu_icon4"
+        android:drawablePadding="10.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="@string/feedback"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <!-- <View
+        android:layout_width="240dip"
+        android:layout_height="2.0dip"
+        android:background="@drawable/line" /> -->
+    <!-- <TextView
+         android:id="@+id/layout_05"
+        android:layout_width="240dip"
+        android:layout_height="50.0dip"
+        android:clickable="true"
+        android:drawableLeft="@drawable/menu_icon5"
+        android:drawablePadding="10.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="更多产品信息"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp" /> -->
+
+    <!-- <View
+        android:layout_width="240dip"
+        android:layout_height="2.0dip"
+        android:background="@drawable/line" /> -->
+    <TextView
+         android:id="@+id/layout_06"
+        android:layout_width="240dip"
+        android:layout_height="50.0dip"
+        android:clickable="true"
+        android:drawableLeft="@drawable/menu_icon6"
+        android:drawablePadding="10.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="@string/version_update"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <!-- <View
+        android:layout_width="240dip"
+        android:layout_height="2.0dip"
+        android:background="@drawable/line" /> -->
+    <!-- <TextView
+         android:id="@+id/layout_07"
+        android:layout_width="240dip"
+        android:layout_height="50.0dip"
+        android:clickable="true"
+        android:drawableLeft="@drawable/menu_icon7"
+        android:drawablePadding="10.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="关于"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp" /> -->
+
+   <!--  <View
+        android:layout_width="240dip"
+        android:layout_height="2.0dip"
+        android:background="@drawable/line" /> -->
+
+</LinearLayout>

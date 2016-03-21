@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="64dp"
+    android:background="@color/white" >
+
+    <Button
+        android:id="@+id/LButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/backbtn"
+        android:scaleType="fitCenter"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:maxWidth="150dip"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/is_nz"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/is_wifi"
+        android:background="@drawable/dingshi_icon"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/is_wifi"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/RButton"
+        android:background="@drawable/lianjie_icon"
+        android:visibility="gone"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:id="@+id/RButton"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:background="@null"
+        android:paddingLeft="1dip"
+        android:paddingRight="1dip"
+        android:text="@string/add"
+        android:textColor="@color/blue"
+        android:singleLine="true"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingTop="5dp"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/wifiname"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:text="000000"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <!-- <TextView
+        android:id="@+id/timingtitle"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dip"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/timingtime"
+        android:text="开"
+        android:textSize="26dp" />
+
+    <TextView
+        android:id="@+id/timinglal"
+        android:layout_width="300dp"
+        android:layout_height="26dp"
+        android:layout_below="@+id/timingtime"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:text="预约      周一,周二,周三"
+        android:textSize="18dp" />
+
+    <com.intelligence.activity.hum.SwitchButton
+        android:id="@+id/wiperSwitch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip" />
+    
+    
+    <Button
+        android:id="@+id/delbtn"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:textColor="@color/white"
+        android:text="删除"
+        android:textSize="18dp" /> -->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lightgray" />
+
+</RelativeLayout>

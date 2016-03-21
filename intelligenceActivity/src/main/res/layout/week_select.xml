@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:columnCount="6"
+    android:alignmentMode="alignMargins"
+    android:layout_gravity="center_horizontal"
+    >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/monday"
+            android:textSize="14sp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/monday"/>
+        <com.gc.materialdesign.views.CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="16dp"
+            android:id="@+id/monday_switch">
+        </com.gc.materialdesign.views.CheckBox>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tuesday"
+            android:id="@+id/tuesday"
+            android:layout_gravity="center_vertical"
+            android:textSize="14sp"/>
+        <com.gc.materialdesign.views.CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/tuesday_switch">
+        </com.gc.materialdesign.views.CheckBox>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wednesday"
+            android:layout_gravity="center_vertical"
+            android:textSize="14sp"
+            android:id="@+id/wednesday"/>
+        <com.gc.materialdesign.views.CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/wednesday_switch">
+        </com.gc.materialdesign.views.CheckBox>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/thursday"
+            android:layout_gravity="center_vertical"
+            android:textSize="14sp"
+            android:id="@+id/thursday"/>
+        <com.gc.materialdesign.views.CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/thursday_switch">
+        </com.gc.materialdesign.views.CheckBox>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/friday"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/friday"
+            android:textSize="14sp"/>
+        <com.gc.materialdesign.views.CheckBox
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:id="@+id/friday_switch">
+        </com.gc.materialdesign.views.CheckBox>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/saturday"
+            android:id="@+id/saturday"
+            android:textSize="14sp"/>
+        <com.gc.materialdesign.views.CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/saturday_switch">
+        </com.gc.materialdesign.views.CheckBox>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/sunday"
+            android:textSize="14sp"
+            android:id="@+id/sunday"/>
+        <com.gc.materialdesign.views.CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/sunday_switch">
+        </com.gc.materialdesign.views.CheckBox>
+
+</GridLayout>

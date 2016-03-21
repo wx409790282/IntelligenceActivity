@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:background="@drawable/navbg" >
+
+    <ImageButton
+        android:id="@+id/nav_btn_left"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:background="#00000000"
+        android:scaleType="fitCenter"
+        android:src="@drawable/backbtn" />
+    <ImageButton
+        android:id="@+id/nav_btn_left2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:background="#00000000"
+        android:scaleType="fitCenter"
+        android:src="@drawable/shuaxin" />
+
+    <TextView
+        android:id="@+id/nav_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="20dip" />
+
+    <Button
+        android:id="@+id/nav_btn_right1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10.0dip"
+        android:background="#00000000"
+        android:text="@string/add"
+        android:textSize="15dp"
+        android:textColor="@color/myblue" />
+
+    <Button
+        android:id="@+id/nav_btn_right3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10.0dip"
+        android:background="#00000000"
+        android:text="@string/save"
+        android:textSize="15dp"
+        android:textColor="@color/myblue" />
+    
+    <ImageButton
+        android:id="@+id/nav_btn_right2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10.0dip"
+        android:background="#00000000"
+        android:scaleType="fitCenter"
+        android:src="@drawable/home_right_btn2" />
+    
+    <ImageButton
+        android:id="@+id/nav_btn_right4"
+        android:layout_toLeftOf="@+id/nav_btn_right2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10.0dip"
+        android:background="#00000000"
+        android:scaleType="fitCenter"
+        android:src="@drawable/lianjie_icon2" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/mygrey" />
+
+</RelativeLayout>

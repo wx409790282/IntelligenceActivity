@@ -1,0 +1,492 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/calendar_view"
+    android:descendantFocusability="blocksDescendants"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#1f7eba"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <ImageView
+            android:id="@+id/beforeMonthImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/home_left_arrow_unclick"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/curDayTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/afterMonthImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/home_right_arrow_unclick"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/home_sunday" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/home_monday" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/home_tuesday" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/home_wednesday" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/home_thursday" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/home_friday" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/home_saturday" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp" >
+
+        <TextView
+            android:id="@+id/day0TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day1TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day2TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day3TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day4TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day5TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day6TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp" >
+
+        <TextView
+            android:id="@+id/day7TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day8TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day9TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day10TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day11TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day12TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day13TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp" >
+
+        <TextView
+            android:id="@+id/day14TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day15TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day16TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day17TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day18TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day19TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day20TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp" >
+
+        <TextView
+            android:id="@+id/day21TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day22TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day23TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day24TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day25TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day26TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day27TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp" >
+
+        <TextView
+            android:id="@+id/day28TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day29TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day30TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day31TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day32TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day33TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day34TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp" >
+
+        <TextView
+            android:id="@+id/day35TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day36TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day37TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day38TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day39TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day40TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/day41TextView"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" />
+    </LinearLayout>
+
+</LinearLayout>

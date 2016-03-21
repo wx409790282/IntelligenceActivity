@@ -1,0 +1,247 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.intelligence.activity.humidifier.HumActivity" >
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/humbg1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        <include
+            android:id="@+id/tablayout"
+            layout="@layout/title" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/hcusbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/zidingyi" />
+
+            <com.intelligence.activity.humidifier.QipaoView
+                android:id="@+id/qipaoview"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:background="#00000000" />
+
+            <ImageButton
+                android:id="@+id/timingbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/dingshi" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/humimage"
+                android:layout_width="270dp"
+                android:layout_height="270dp"
+                android:layout_centerInParent="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/hum" />
+
+            <Button
+                android:id="@+id/startbtn"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="180dp"
+                android:background="#00000000" />
+
+            <TextView
+                android:id="@+id/humsdlal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:text="45%"
+                android:textColor="@color/lightskyblue"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/shijian" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/hum_state"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/humsattslal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hum_state_empty"
+                android:textColor="@color/blue1"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footview"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/flzbtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/flzc" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/hum_state_anion"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/footview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/dxbtn1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#00000000"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sds" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/hum_mode_dry"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/dxbtn2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#00000000"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sdm_b" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/hum_mode_cozy"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/dxbtn3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#00000000"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sdb_b" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/hum_mode_wet"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

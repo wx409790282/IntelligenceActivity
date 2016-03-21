@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.intelligence.activity.attendance.AttendanceHistory">
+
+    <include
+        android:id="@+id/tablayout"
+        layout="@layout/title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/attendance_history_name"
+            android:text="sunning"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            />
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="16dp"
+            android:horizontalSpacing="40dp"
+            android:gravity="center_horizontal"
+            >
+            <TextView android:background="@color/green" android:text="    " android:layout_gravity="center_horizontal"/>
+            <TextView android:background="@color/yellow" android:text="    " android:layout_gravity="center_horizontal"/>
+            <TextView android:background="@color/red" android:text="    " android:layout_gravity="center_horizontal"/>
+            <TextView android:text="@string/attendance_status_attend"/>
+            <TextView android:text="@string/attendance_status_late"/>
+            <TextView android:text="@string/attendance_status_absent"/>
+        </GridLayout>
+    </RelativeLayout>
+    <com.intelligence.activity.attendance.CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4c000000"
+        android:orientation="vertical"
+        android:id="@+id/attendance_history_calendar">
+    </com.intelligence.activity.attendance.CalendarView>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/attendance_history_scrollview"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/attendance_history_dayview1"
+            android:orientation="vertical">
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/attendance_history_statistics"
+        android:id="@+id/attendance_history_statistics"
+        android:textSize="15sp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/attendance_history_attend"
+        android:id="@+id/attendance_history_attend"
+        android:textSize="15sp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/attendance_history_absent"
+        android:id="@+id/attendance_history_absent"
+        android:textSize="15sp"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bg"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/time_id_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="09:00"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/time_id_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014-10-24"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time_id_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="1.8L"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/time_id_031"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/boil"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/time_id_04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="0.03W.h"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/time_id_05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/manual"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+</LinearLayout>

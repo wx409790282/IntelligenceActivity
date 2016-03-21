@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/IntelligenceActivity2.iml" filepath="$PROJECT_DIR$/IntelligenceActivity2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MaterialDesign/MaterialDesign.iml" filepath="$PROJECT_DIR$/MaterialDesign/MaterialDesign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base_library_pullToRefresh_chenyoca/base_library_pullToRefresh_chenyoca.iml" filepath="$PROJECT_DIR$/base_library_pullToRefresh_chenyoca/base_library_pullToRefresh_chenyoca.iml" />
+      <module fileurl="file://$PROJECT_DIR$/intelligenceActivity/intelligenceActivity.iml" filepath="$PROJECT_DIR$/intelligenceActivity/intelligenceActivity.iml" />
+    </modules>
+  </component>
+</project>

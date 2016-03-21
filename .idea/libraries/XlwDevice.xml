@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="XlwDevice">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/intelligenceActivity/libs/XlwDevice.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="addsection_hint" type="id">每个用户只能有三个考勤时间</item>
+    <item name="delsection_hint" type="id">用户至少要有一个考勤区间</item>
+</resources>

@@ -1,0 +1,472 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.intelligence.activity.humidifier.HumCustomActivity" >
+    <include
+        android:id="@+id/tablayout"
+        layout="@layout/title" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/hum_custom_city"
+                    android:textColor="@color/dimgray"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/cityname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="广州"
+                    android:textColor="@color/dimgray"
+                    android:textSize="18dp" />
+            </LinearLayout>
+            <!-- 城市天气 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/hum_custom_citytemp"
+                    android:textColor="@color/dimgray"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/citytmp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6-18℃"
+                    android:textColor="@color/dimgray"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/hum_custom_citywet"
+                    android:textColor="@color/dimgray"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/cityhum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="40%"
+                    android:textColor="@color/dimgray"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/lightgray" />
+
+        <!-- 设定湿度 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="8dp"
+                android:text="@string/hum_custom_wetset"
+                android:textColor="@color/black"
+                android:textSize="22dp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/lightgray" />
+        </LinearLayout>
+
+        <!-- 干 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sds" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/hum_mode_dry"
+                android:textColor="@color/dimgray"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/sdtxt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="22-42℃"
+                android:textColor="@color/dimgray"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/lightgray" />
+        <!-- 舒适 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sdm" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/hum_mode_cozy"
+                android:textColor="@color/dimgray"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/sdtxt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="22-42℃"
+                android:textColor="@color/dimgray"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/lightgray" />
+        <!-- 湿 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sdb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/hum_mode_wet"
+                android:textColor="@color/dimgray"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/sdtxt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="22-42℃"
+                android:textColor="@color/dimgray"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+
+        <!-- 智能加湿 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="8dp"
+                android:text="@string/hum_custom_notificatingset"
+                android:textColor="@color/black"
+                android:textSize="22dp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/lightgray" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- 设置1 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="60dp"
+                            android:text="@string/hum_custom_notificatingset_nearstart"
+                            android:textColor="@color/dimgray"
+                            android:textSize="18dp" />
+
+                        <com.intelligence.activity.humidifier.SwitchButton
+                            android:id="@+id/sbtn1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="30dp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/lightgray" />
+
+                </LinearLayout>
+
+                <!-- 设置2 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="60dp"
+                            android:text="@string/hum_custom_notificatingset_farstop"
+                            android:textColor="@color/dimgray"
+                            android:textSize="18dp" />
+
+                        <com.intelligence.activity.humidifier.SwitchButton
+                            android:id="@+id/sbtn2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="30dp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/lightgray" />
+
+                </LinearLayout>
+
+                <!-- 设置3 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="60dp"
+                            android:text="@string/hum_custom_notificatingset_startandstopremind"
+                            android:textColor="@color/dimgray"
+                            android:textSize="18dp" />
+
+                        <com.intelligence.activity.humidifier.SwitchButton
+                            android:id="@+id/sbtn3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="30dp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/lightgray" />
+
+                </LinearLayout>
+
+                <!-- 设置4 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="60dp"
+                            android:text="@string/hum_custom_notificatingset_nowaterremind"
+                            android:textColor="@color/dimgray"
+                            android:textSize="18dp" />
+
+                        <com.intelligence.activity.humidifier.SwitchButton
+                            android:id="@+id/sbtn4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="30dp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/lightgray" />
+                </LinearLayout>
+                <!-- 设置5 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="60dp"
+                            android:text="@string/hum_custom_notificatingset_dryremind"
+                            android:textColor="@color/dimgray"
+                            android:textSize="18dp" />
+
+                        <com.intelligence.activity.humidifier.SwitchButton
+                            android:id="@+id/sbtn5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="30dp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/lightgray" />
+
+                </LinearLayout>
+                
+                
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>

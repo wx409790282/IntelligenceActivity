@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.intelligence.activity.LoginActivity">
+
+    <include
+        android:id="@+id/tablayout"
+        layout="@layout/title" />
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <AutoCompleteTextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_phone"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/phone"
+                android:singleLine="true"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_password"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/password"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <com.gc.materialdesign.views.CheckBox
+                    android:id="@+id/isAuto_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/remember_phone"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"/>
+                <com.gc.materialdesign.views.CheckBox
+                    android:id="@+id/isAuto_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/auto_login"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/email_sign_in_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/action_sign_in"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_vertical"
+        android:visibility="gone"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toregister"
+            android:textSize="20sp"/>
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register">
+
+        </com.gc.materialdesign.views.ButtonRectangle>
+    </LinearLayout>
+</LinearLayout>

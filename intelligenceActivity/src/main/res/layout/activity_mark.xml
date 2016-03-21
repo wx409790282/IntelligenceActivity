@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.intelligence.activity.humidifier.MarkActivity" >
+
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <com.intelligence.activity.humidifier.NavigationBar
+            android:id="@+id/navigationbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_margin="20dip"
+            android:background="@drawable/rounded_edittext"
+            android:hint="@string/label_hint"
+            android:padding="5dip"
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:textColorHint="#AAAAAA"
+            android:textSize="15dip" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!--- <test pattern="SECAM" /><test pattern="NTSC"
+     corners
+    android:topLeftRadius="5dp"
+    android:bottomLeftRadius="5dp"
+    android:topRightRadius="0.1dp"
+    android:bottomRightRadius="0.1dp" />/> -->
+
+    <stroke
+    android:width="0.5dp"
+    android:color="#0000ff" />
+</shape>

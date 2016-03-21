@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.intelligence.activity.view.SlideMenu
+        android:id="@+id/slide_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <include layout="@layout/layout_menu" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/tablayout"
+                layout="@layout/title" />
+
+            <com.handmark.pulltorefresh.library.PullToRefreshGridView
+                xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/girdview_id"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/tablayout"
+                android:gravity="center_horizontal"
+                android:numColumns="3"
+                android:paddingTop="10dp"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="1dp"
+                ptr:ptrAnimationStyle="flip"
+                ptr:ptrHeaderBackground="@color/white"
+                ptr:ptrHeaderSubTextColor="#000000"
+                ptr:ptrHeaderTextColor="#0000ff"
+                ptr:ptrListViewExtrasEnabled="false"
+                ptr:ptrMode="both"
+                ptr:ptrRefreshableViewBackground="@color/white"
+                ptr:ptrScrollingWhileRefreshingEnabled="true"
+                ptr:ptrShowIndicator="false" />
+        </RelativeLayout>
+    </com.intelligence.activity.view.SlideMenu>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tempjump"
+            android:text="jump to switch">
+        </com.gc.materialdesign.views.ButtonRectangle>
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tempjump1"
+            android:text="登录"></com.gc.materialdesign.views.ButtonRectangle>
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tempjump2"
+            android:text="寻物"></com.gc.materialdesign.views.ButtonRectangle>
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tempjump3"
+            android:text="灭蚊器">
+        </com.gc.materialdesign.views.ButtonRectangle>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

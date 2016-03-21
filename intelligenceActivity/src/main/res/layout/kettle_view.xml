@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46dp" >
+
+        <ImageView
+            android:id="@+id/dzimage"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:src="@drawable/shdz" />
+
+        <ImageView
+            android:id="@+id/hsimage"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:src="@drawable/shhs" />
+
+        <RelativeLayout
+            android:id="@+id/qibaobview"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:background="@color/mykblue" />
+
+        <com.intelligence.activity.kettle.KettleAnView
+            android:id="@+id/kettleanview"
+            android:layout_width="270dp"
+            android:layout_height="270dp" />
+
+        <ImageView
+            android:id="@+id/zzimage"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:src="@drawable/shzz" />
+
+        <TextView
+            android:id="@+id/temptext"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="45dp"
+            android:gravity="center_horizontal"
+            android:text="0℃"
+            android:textColor="@color/blue"
+            android:textSize="33dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/shlevzz"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/levtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.0L"
+            android:textColor="@color/gray"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="2dp"
+            android:background="@color/gray" />
+    </LinearLayout>
+
+
+</RelativeLayout>

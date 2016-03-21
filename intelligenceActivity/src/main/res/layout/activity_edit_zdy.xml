@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/tablayout"
+        layout="@layout/title" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="260dp"
+        android:layout_below="@+id/tablayout"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <com.intelligence.activity.view.RotateDrawView
+            android:id="@+id/rotatedrawview"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:layout_centerInParent="true" />
+
+        <!--
+        <ImageView
+            android:layout_width="247dip"
+            android:layout_height="240dip"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/wendupan" >
+        </ImageView>
+
+        <ImageView
+            android:layout_width="250dip"
+            android:layout_height="240dip"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/c2" >
+        </ImageView>
+
+        <com.intelligence.activity.view.ProgressView
+            android:id="@+id/arcProgressbar1"
+            android:layout_width="183dip"
+            android:layout_height="130dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dip" />
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/edit_txt_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10dp"
+            android:text="30°c"
+            android:textColor="@color/red"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/seekBar1"
+            android:layout_toLeftOf="@+id/arcProgressbar1"
+            android:text="30°c－"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/seekBar1"
+            android:layout_toRightOf="@+id/arcProgressbar1"
+            android:text="－ 100°c"
+            android:visibility="gone" /
+        -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:id="@+id/zdy_edit_layout_id"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/layout_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawableLeft="@drawable/biaoqian"
+                android:drawablePadding="10.0dip"
+                android:gravity="center_vertical"
+                android:text="@string/label"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/zdy_txt_layout_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:drawablePadding="10.0dip"
+                android:drawableRight="@drawable/icon_next"
+                android:gravity="center_vertical"
+                android:text="@string/milk"
+                android:textColor="@color/gray"
+                android:textSize="20dp"
+                android:layout_centerVertical="true"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:id="@+id/zdy_layout_01_id"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/zdy_txt_layout_21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawableLeft="@drawable/zhufei"
+                android:drawablePadding="10.0dip"
+                android:gravity="center_vertical"
+                android:text="@string/boil_then_cooldown"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:textSize="20dp" />
+
+            <CheckBox
+                android:id="@+id/Switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:button="@drawable/t1_selected" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:id="@+id/zdy_layout_02_id"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/zdy_txt_layout_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawableLeft="@drawable/jinghua2"
+                android:drawablePadding="10.0dip"
+                android:gravity="center_vertical"
+                android:text="@string/purify_length"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:textSize="20dp" />
+
+            <CheckBox
+                android:id="@+id/Switch2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:button="@drawable/t1_selected" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:id="@+id/zdy_layout_03_id"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/zdy_txt_layout_04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawableLeft="@drawable/baowen"
+                android:drawablePadding="10.0dip"
+                android:gravity="center_vertical"
+                android:text="@string/insulation_length"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:textSize="20dp" />
+
+            <CheckBox
+                android:id="@+id/Switch3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:button="@drawable/t1_selected" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line" />
+
+        <TextView
+            android:id="@+id/zdy_txt_layout_05"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_category_mark"
+            android:drawablePadding="10.0dip"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="@string/caculate_time"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <include
+        android:id="@+id/tablayout"
+        layout="@layout/title" />
+    <ImageView
+        android:id="@+id/headimg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/question"
+        android:layout_marginTop="15dp"
+        />
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <AutoCompleteTextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/phone"
+                android:singleLine="true"
+                android:textSize="15sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginTop="15dp">
+                <EditText
+                    android:id="@+id/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_email"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:drawableLeft="@drawable/message"
+                    android:singleLine="true"
+                    android:textSize="15sp"
+                    android:layout_weight="1"/>
+                <com.gc.materialdesign.views.ButtonFlat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resent"
+                    android:id="@+id/resent"
+                    android:textColor="@color/black"
+                    android:background="@color/blue"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="2"></com.gc.materialdesign.views.ButtonFlat>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_user"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/user"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_password"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/password"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"/>
+            <EditText
+                android:id="@+id/password_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_password_confirm"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/password"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"/>
+
+            <Button
+                android:id="@+id/email_sign_in_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/register"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

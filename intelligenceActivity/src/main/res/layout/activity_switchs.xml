@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.intelligence.activity.switchs.SwitchsActivity"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/tablayout"
+        layout="@layout/title" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch_name"
+            android:text="@string/switch_name"
+            style="@style/TextTitleStyle"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch_id"
+            android:layout_below="@+id/switch_name"
+            android:layout_marginLeft="32dp"
+            android:text="000"/>
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/switch_search"
+            android:text="@string/search">
+
+        </com.gc.materialdesign.views.ButtonRectangle>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/light_list"
+        style="@style/TextTitleStyle"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch_listview"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="10dp"></ListView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch_runstatus"
+        android:text="上次运行时间为："
+        android:layout_gravity="center_horizontal|bottom"/>
+
+</LinearLayout>
